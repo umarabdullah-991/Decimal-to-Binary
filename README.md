@@ -4,7 +4,7 @@ This project is a simple web-based application that converts decimal numbers to 
 
 ## Live Demo
 
-You can try the live version of the Decimal to Binary Converter [Live Link](#).
+You can try the live version of the [Decimal-to-Binary-Converter](https://decimals-to-binary.netlify.app/).
 
 ## Table of Contents
 
