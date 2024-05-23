@@ -1,4 +1,4 @@
-//Declare Variables that select html classes
+//Declare Variables that select html ids
 let decimalInput = document.getElementById("decimal-input");
 let binaryInput = document.getElementById("binary-input");
 let errorMsg = document.getElementById("error-msg");
@@ -19,5 +19,16 @@ binaryInput.addEventListener("input", () => {
         errorMsg.textContent = "";
     }else{
         errorMsg.textContent = "Please Enter an Valid Binary Input";
+    }
+
+
+    //Function to validate binary input
+    function binValidator(num) {
+        for(let i = 0; i<num.length; i++){
+            if(num[i] !== '0' && num[i] !== '1'){
+                return false;
+            }
+        }
+        return true;
     }
 });
