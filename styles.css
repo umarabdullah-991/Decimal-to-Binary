@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #115ab2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 80vh;
+  min-height: 80vh;
+}
+.container {
+  background-color: #b3abab;
+  width: 80vmin;
+  max-width: 37.5em;
+  padding: 3em 2.5em;
+  position: absolute;
+  border-radius: 1.5rem;
+  box-shadow: 0 1.2rem 2.4rem rgba(255, 255, 255, 0.18);
+}
+h2 {
+  font-size: 1.8rem;
+  color: rgb(0, 30, 255);
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.6rem;
+  margin-bottom: 1.3em;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: rgb(239, 178, 87);
+}
+input {
+  position: relative;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 2px solid #cbbb2b;
+  outline-color: rgb(91, 206, 102);
+}
+/* input:focus {
+  border-radius: rgb(20, 46, 116);
+} */
+#error-msg {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(99, 13, 13);
+}
+@media (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
