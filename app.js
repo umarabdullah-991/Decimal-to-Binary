@@ -14,7 +14,7 @@ decimalInput.addEventListener("input", () => {
 binaryInput.addEventListener("input", () => {
     let binaryValue = binaryInput.value;
     //if the binary number is valid convert it to decimal
-    if (binValidator(binvalue)){
+    if (binValidator(binaryValue)){
         decimalInput.value = parseInt(binaryValue, 2);
         errorMsg.textContent = "";
     }else{
@@ -24,8 +24,8 @@ binaryInput.addEventListener("input", () => {
 
     //Function to validate binary input
     function binValidator(num) {
-        for(let i = 0; i<num.length; i++){
-            if(num[i] !== '0' && num[i] !== '1'){
+        for(let i = 0; i < num.length; i++){
+            if(num[i] !== "0" && num[i] !== "1"){
                 return false;
             }
         }
